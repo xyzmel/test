@@ -67,7 +67,7 @@ const CollaborationSection = () => {
       <section className="progress-section">
         <div className="container">
           <div className="heading-title">
-            <Title title="Hvem vi er" />
+            <Title title="Om oss" />
           </div>
           <div className="progress-content">
             <p>

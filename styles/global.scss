@@ -187,7 +187,7 @@ footer {
     @include flex(center, space-between, none);
     span {
       font-size: $sm;
-      letter-spacing: 2px;
+      letter-spacing: 1px;
     }
   }
   &::after {

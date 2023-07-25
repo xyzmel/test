@@ -26,7 +26,7 @@ const Hero = () => {
         <div className='container'>
           <div className='heading-title'>
             <Title title='Innovative digitale opplevelser' />
-            <p> Velkommen til en reise der vi sammen vil oppdage endeløse digitale potensialer og forme din digitale suksesshistorie."</p>
+            <p> Velkommen til en reise der vi sammen vil oppdage endeløse digitale potensialer og forme din digitale suksesshistorie.</p>
           </div>
           <div className='hero-content grid-4'>
             {home.map((item, i) => (

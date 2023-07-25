@@ -25,8 +25,9 @@ export const expertise = [
   {
     id: 2,
     title: "Digital Markedsføring",
-    cover: "../images/s5.jpg",
-    text: "Vi Styrker din tilstedeværelse på nett med våre omfattende digitale markedsføringstjenester. Vi spesialiserer oss i sosiale medier-markedsføring, søkemotoroptimalisering, PPC-annonsering, innholdsmarkedsføring, og optimalisering av konverteringsrate. Vi når ut til din målgruppe og oppnår konkrete resultater.",
+    cover: "../images/e3.jpg",
+    text: "Vi Styrker din tilstedeværelse på nett med våre omfattende digitale markedsføringstjenester. Vi spesialiserer oss i sosiale medier-markedsføring, søkemotoroptimalisering, PPC-annonsering, innholdsmarkedsføring, og optimalisering av konverteringsrate. Vi når ut til din målgruppe og oppnår konkrete resultater.", 
+    
   },
 
   {
