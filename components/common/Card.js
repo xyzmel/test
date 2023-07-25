@@ -1,36 +1,33 @@
-import Link from "next/link"
-import { TitleSm } from "./Title"
-import { HiOutlineArrowRight } from "react-icons/hi"
+import React from "react";
+import { TitleSm } from "./Title";
+import { HiOutlineArrowRight } from "react-icons/hi";
 
-export const Card = ({ data, caption, show, path }) => {
+export const Card = ({ data, caption, show }) => {
   return (
     <>
-      <div className='card'>
-        <div className='card-img'>
+      <div className="card">
+        <div className="card-img">
           <img src={data.cover} alt={data.title} />
         </div>
-        <div className='card-details'>
-          <Link href={`${path}/${data.id}`} className='title-link'>
+        <div className="card-details">
+          {/* Apply CSS style to hide pointer on hover */}
+          <div className="title-link" style={{ pointerEvents: "none" }}>
             <TitleSm title={data.title} />
-          </Link>
+          </div>
           {caption && (
-            <Link href={`${path}/${data.id}`}>
-              {caption} <HiOutlineArrowRight className='link-icon' />
-            </Link>
+            <div style={{ pointerEvents: "none" }}>
+              {caption} <HiOutlineArrowRight className="link-icon" />
+            </div>
           )}
-          <div className='flex'>
-            <span> {data.catgeory} </span> {data.date && <span> / {data.date}</span>}
+          <div className="flex">
+            <span> {data.category} </span>{" "}
+            {data.date && <span> / {data.date}</span>}
           </div>
 
-          {show && (
-            <ul>
-              {data.desc.map((text, i) => (
-                <li key={i}> - {text.text}</li>
-              ))}
-            </ul>
-          )}
+          {/* Check if data has a 'text' property and display it */}
+          {data.text && <p>{data.text}</p>}
         </div>
       </div>
     </>
-  )
-}
+  );
+};

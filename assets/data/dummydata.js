@@ -1,52 +1,41 @@
-import { AiOutlineCalendar } from "react-icons/ai"
-import { TfiRulerPencil } from "react-icons/tfi"
-import { VscFileSubmodule } from "react-icons/vsc"
-import { BiUser } from "react-icons/bi"
+import { AiOutlineCalendar } from "react-icons/ai";
+import { TfiRulerPencil } from "react-icons/tfi";
+import { VscFileSubmodule } from "react-icons/vsc";
+import { BiUser } from "react-icons/bi";
 
 export const home = [
   {
     icon: <AiOutlineCalendar size={25} />,
-    title: "10+ years of market experience",
+    title: "2+ år av markedserfaring",
   },
   {
     icon: <TfiRulerPencil size={25} />,
-    title: "Unique technologies & modern approach ",
+    title: "Moderne tilnærming ",
   },
   {
     icon: <VscFileSubmodule size={25} />,
-    title: "100+ cuccessful cases in portfolio",
+    title: "Portefølje under utvikling",
   },
   {
     icon: <BiUser size={25} />,
-    title: "Customer satisfaction is our top priority",
+    title: "Kundetilfredshet er vår høyeste prioritet",
   },
-]
+];
 export const expertise = [
   {
-    id: 1,
-    title: "Web Design & Development",
-    cover: "../images/e1.jpg",
-    desc: [{ text: "Web design" }, { text: "Web development" }, { text: "Custom icons & illustrations" }, { text: "Hosting" }, { text: "Website audit" }],
-  },
-  {
     id: 2,
-    title: "Digital Marketing",
-    cover: "../images/e2.jpg",
-    desc: [{ text: "Social media marketing" }, { text: "Marketing campaigns" }, { text: "Markting management" }, { text: "SEO" }],
+    title: "Digital Markedsføring",
+    cover: "../images/s5.jpg",
+    text: "Vi Styrker din tilstedeværelse på nett med våre omfattende digitale markedsføringstjenester. Vi spesialiserer oss i sosiale medier-markedsføring, søkemotoroptimalisering, PPC-annonsering, innholdsmarkedsføring, og optimalisering av konverteringsrate. Vi når ut til din målgruppe og oppnår konkrete resultater.",
   },
-  {
-    id: 3,
-    title: "E-Commerce",
-    cover: "../images/e3.jpg",
-    desc: [{ text: "E-Commerce website design" }, { text: "WooCommerce" }, { text: "Content management" }, { text: "Hosting" }],
-  },
+
   {
     id: 4,
-    title: "Branding & Creative Services",
+    title: "Innholdsproduksjon",
     cover: "../images/e4.jpg",
-    desc: [{ text: "Visual identity" }, { text: "Branding for social media" }, { text: "Custom illustrations" }],
+    text: "Vi skaper engasjerende innhold for din bedrift. Vi tilbyr profesjonell filming og fotografering med kamera og drone, slik at du kan presentere bedriften din på en unik og kreativ måte. Ta din digitale tilstedeværelse til nye høyder med vårt kreative innhold!",
   },
-]
+];
 export const testimonial = [
   {
     id: 1,
@@ -76,45 +65,8 @@ export const testimonial = [
     post: "Seven Arts - marketing manager",
     desc: "Cras at ornare fermentum quam et tortor euismod, vel maximus metus tristique at ornare ex, quis fringilla tortor. Aenean semper neque quis consectetur lobortis. Quisque nec convallis ex. Aenean ut metus et nunc cursus aliquet.",
   },
-]
-export const showcase = [
-  {
-    id: 1,
-    title: "Neon Lights",
-    cover: "../images/s1.jpg",
-    catgeory: "DIGITAL MARKETING",
-  },
-  {
-    id: 2,
-    title: "Futuristic Furniture",
-    catgeory: "WEBSITES",
-    cover: "../images/s2.jpg",
-  },
-  {
-    id: 3,
-    title: "Smart Living",
-    cover: "../images/s3.jpg",
-    catgeory: "WEBSITES",
-  },
-  {
-    id: 4,
-    title: "Light Painting",
-    cover: "../images/s4.jpg",
-    catgeory: "BRANDING	",
-  },
-  {
-    id: 5,
-    title: "Ideabox",
-    cover: "../images/s5.jpg",
-    catgeory: "BRANDING	",
-  },
-  {
-    id: 5,
-    title: "VR Experience",
-    cover: "../images/s6.jpg",
-    catgeory: "WEBSITES	",
-  },
-]
+];
+
 export const brand = [
   {
     id: 1,
@@ -140,7 +92,7 @@ export const brand = [
     id: 6,
     cover: "../images/l6.svg",
   },
-]
+];
 export const blogdata = [
   {
     id: 1,
@@ -158,7 +110,8 @@ export const blogdata = [
   },
   {
     id: 3,
-    title: "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
+    title:
+      "Building the real VR lorem ipsum dolor amet glavrida from a scratch",
     cover: "../images/b3.jpg",
     catgeory: "TIPS & TRICKS",
     date: "OCTOBER 9, 2023",
@@ -170,7 +123,7 @@ export const blogdata = [
     catgeory: "EVENTS",
     date: "OCTOBER 8, 2023",
   },
-]
+];
 export const teamdata = [
   {
     id: 1,
@@ -220,4 +173,15 @@ export const teamdata = [
     cover: "../images/t8.jpg",
     post: "",
   },
-]
+];
+
+export const portfolioData = [
+  {
+    id: 1,
+    type: "image",
+    url: "/images/5.mp4",
+    alt: "Image 1",
+  },
+
+  // Add more portfolio items as needed
+];

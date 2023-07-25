@@ -3,7 +3,7 @@
 .title-logo {
   font-size: $xl-6;
   -webkit-text-stroke: 1px $white;
-  color: transparent;
+
   span {
     font-size: $xl-5;
     -webkit-text-stroke: $green;
@@ -37,9 +37,9 @@
 .secondary-button,
 .button-primary {
   text-transform: capitalize;
-  color: $dark;
+  color: white;
   padding: 13px 40px;
-  background-color: $green;
+  background: $gradient2;
   font-size: $md;
   border-radius: 50px;
   box-shadow: $shadow-md;
@@ -107,6 +107,7 @@
   }
   ul {
     margin-top: $xl-6;
+    list-style-type: none;
   }
   ul li {
     margin-bottom: $xl-2;
@@ -143,6 +144,45 @@
   margin: 0 -15px;
 }
 @media screen and (max-width: 800px) {
+  .hero {
+    text-align: center;
+    padding: $sm 0;
+    height: auto !important; /* Adjust the height to be auto for smaller screens */
+    overflow: hidden !important;
+    position: relative;
+    &::before {
+      /* ... (existing styles remain the same) */
+    }
+    .hero-title {
+      font-size: $xl-5;
+      line-height: 1.5;
+      font-weight: 600;
+      margin: $sm 1;
+    }
+    .sub-heading {
+      flex-wrap: wrap; /* Allow subheading items to wrap on smaller screens */
+      justify-content: center;
+      align-items: center; /* Align subheading items in the center */
+      text-align: center; /* Align subheading text in the center */
+      margin-top: $sm; /* Add a margin to create space between hero-title and sub-heading */
+      .titleSm {
+        diplay: none;
+        margin: 0 $sm;
+        font-size: $sm; /* Adjust the font size for sub-heading items */
+      }
+      span {
+        font-size: $xll;
+        line-height: 0;
+        color: $green;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 350px) {
+  /* Additional styles for smaller screens (min-width: 400px to max-width: 700px) */
   .slick-arrow .next {
     top: 0;
     right: 0;
@@ -153,6 +193,6 @@
   }
   .heading-title {
     max-width: 100%;
-    padding: 50px 0;
+    padding: 0px 0;
   }
 }

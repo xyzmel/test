@@ -1,22 +1,26 @@
-import React from "react"
-import { Title, TitleLogo } from "./common/Title"
+import React from "react";
+import Link from "next/link"; // Import the Link component
+import { Title, TitleLogo } from "./common/Title";
 
 const Banner = () => {
   return (
     <>
-      <section className='banner'>
-        <div className='container'>
+      <section className="banner">
+        <div className="container">
           <div>
-            <Title title='We are looking forward to start a new project' /> <br />
-            <TitleLogo title='Lets take your business to the next level!' />
+            <Title title="Vi ser frem til å starte et nytt prosjekt" /> <br />
+            
           </div>
+
           <div>
-            <button className='button-primary'>Request a call-back</button>
+            <Link href="/kontakt"> {/* Use "href" instead of "to" */}
+              <button className="button-primary">Kontakt oss</button>
+            </Link>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Banner
+export default Banner;

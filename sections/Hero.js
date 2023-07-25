@@ -12,21 +12,21 @@ const Hero = () => {
     <>
       <section className='hero'>
         <div className='container'>
-          <TitleLogo title='creative' caption='7' className='logobg' />
-          <h1 className='hero-title'>WE BUILD DIGITAL EXPERIENCES</h1>
+          <TitleLogo title='Kvartum' caption='' className='logobg' />
+          <h1 className='hero-title'>VI BYGGER DIGITALE OPPLEVELSER</h1>
 
           <div className='sub-heading'>
-            <TitleSm title='WEBSITES' /> <span>.</span>
-            <TitleSm title='BRANDING' /> <span>.</span>
-            <TitleSm title='DIGITAL MARKETING' />
+            <TitleSm title='REKLAME' /> <span>.</span>
+            <TitleSm title='INNHOLDSPRODUKSJON' /> <span>.</span>
+            <TitleSm title='MARKEDSFØRING' />
           </div>
         </div>
       </section>
       <section className='hero-sec'>
         <div className='container'>
           <div className='heading-title'>
-            <Title title='The last digital agency you ll ever need' />
-            <p>Suspendisse ut magna porttitor, sollicitudin ligula at, molestie dolor. Vivamus a ligula ut velit placerat egestas at id leo. Nulla ac volutpat nunc. Nulla facilisi. Pellentesque tempus tellusut magna porttitor scelerisque.</p>
+            <Title title='Innovative digitale opplevelser' />
+            <p> Velkommen til en reise der vi sammen vil oppdage endeløse digitale potensialer og forme din digitale suksesshistorie."</p>
           </div>
           <div className='hero-content grid-4'>
             {home.map((item, i) => (
@@ -42,13 +42,12 @@ const Hero = () => {
       <Expertise />
       <Banner />
       <Testimonial />
-      <ShowCase />
-      <Brand />
+      
+      <br />
+      <br />
 
-      <div className='text-center'>
-        <Title title='Latest news & articles' />
-      </div>
-      <BlogCard />
+      
+      
     </>
   )
 }

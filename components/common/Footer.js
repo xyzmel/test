@@ -1,102 +1,91 @@
-import Link from "next/link"
-import { TitleLogo } from "./Title"
-import { BsFacebook } from "react-icons/bs"
-import { AiFillBehanceCircle, AiFillInstagram, AiFillLinkedin } from "react-icons/ai"
+import Link from "next/link";
+import { TitleLogo } from "./Title";
+import { BsFacebook } from "react-icons/bs";
+import {
+  AiFillBehanceCircle,
+  AiFillInstagram,
+  AiFillLinkedin,
+} from "react-icons/ai";
 
 const Footer = () => {
   return (
     <>
       <footer>
-        <div className='container'>
-          <div className='grid-4'>
-            <div className='logo'>
-              <TitleLogo title='creative' caption='7' className='logobg' />
+        <div className="container">
+          <div className="grid-4">
+            <div className="logo">
+              <TitleLogo title="Kvartum" caption="" className="logobg" />
               <br />
               <span>
-                Questions? Reach us <br /> Monday – Friday from 9 am to 6 pm
+                Spørsmål? Nå oss <br /> Mandag – Fredag fra 09 til 18
               </span>
               <br />
               <br />
-              <h3>+1 001 234 5678</h3>
+              <h3>+47 958 30 043</h3>
               <br />
-              <button className='button-primary'>Request for quote</button>
+              <a href="/kontakt">
+                <button className="button-primary">Kontakt oss</button>
+              </a>
             </div>
             <ul>
-              <h3>COMPANY</h3>
+              <h3>SELSKAP</h3>
               <li>
-                <Link href='/'>About agency</Link>
+                <Link href="/om">Om Selskapet</Link>
               </li>
               <li>
-                <Link href='/'>Our team</Link>
+                <Link href="/om">team</Link>
               </li>
               <li>
-                <Link href='/'>Showcase</Link>
+                <Link href="/">Portefølje (under arbeid)</Link>
               </li>
               <li>
-                <Link href='/'>Blog</Link>
-              </li>
-              <li>
-                <Link href='/'>Demo design system</Link>
-              </li>
-              <li>
-                <Link href='/'>Contact</Link>
+                <Link href="/kontakt">Kontakt</Link>
               </li>
             </ul>
             <ul>
-              <h3>SERVICES</h3>
+              <h3>Tjenester</h3>
               <li>
-                <Link href='/'>Web Design & Development</Link>
+                <Link href="/tjenester">Digital Markedsføring</Link>
               </li>
               <li>
-                <Link href='/'>Branding & Creative Services</Link>
-              </li>
-              <li>
-                <Link href='/'>Digital Marketing</Link>
-              </li>
-              <li>
-                <Link href='/'>E-Commerce</Link>
+                <Link href="/tjenester">Innholdsproduksjon</Link>
               </li>
             </ul>
             <ul>
-              <h3>CONNECT</h3>
-              <div className='connect'>
+              <h3>NÅ OSS</h3>
+              <div className="connect">
                 <li>
-                  <Link href='/'>
+                  <Link href="https://www.facebook.com/profile.php?id=100090084915977">
                     <BsFacebook size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
-                    <AiFillBehanceCircle size={25} />
-                  </Link>
-                </li>
-                <li>
-                  <Link href='/'>
+                  <Link href="https://www.instagram.com/kvartum_drone/">
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
                 <li>
-                  <Link href='/'>
+                  <Link href="https://www.linkedin.com/company/96034920">
                     <AiFillLinkedin size={25} />
                   </Link>
                 </li>
               </div>
             </ul>
           </div>
-          <div className='legal connect py'>
-            <div className='text'>
-              <span>© 2023 THE SEVEN. ALL RIGHTS RESERVED.</span>
+          <div className="legal connect py">
+            <div className="text">
+              <span>© 2023 Quartum AS</span>
             </div>
-            <div className='connect'>
-              <span>GORKCODER COMPANY</span>
+            <div className="connect">
+              <span>KVARTUM</span>
               <span> &nbsp; | &nbsp; </span>
-              <span>TERMS & CONDITIONS</span>
+              <span>INNLANDET</span>
             </div>
           </div>
         </div>
       </footer>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

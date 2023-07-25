@@ -17,10 +17,10 @@
     background-size: cover;
     background-position: center;
     z-index: -1;
-    overflow-x: hidden !important;
+    overflow-x: hidden;
   }
   .hero-title {
-    font-size: $xll-3;
+    font-size: 50px;
     line-height: 115px;
     font-weight: 600;
     margin: $xl-6 0;
@@ -66,8 +66,8 @@
   .container {
     border-radius: 50px 0 50px 0;
     padding: $xll;
-    background: rgb(192, 90, 255);
-    background: $gradient;
+    background: #FBFAEE;
+    
     @include flex(center, space-between, none);
   }
 }
@@ -113,6 +113,8 @@
     }
   }
 }
+
+
 
 //showcase
 .showcase {
@@ -232,19 +234,10 @@ footer {
         font-weight: 400;
       }
     }
-    .misson-p {
+    .mission-p {
       border-left: 5px solid $indigo;
       padding-left: $xl-5;
     }
-  }
-}
-
-.showcase {
-  img {
-    width: 300px;
-  }
-  .btn {
-    @include flex(center, center, none);
   }
 }
 
@@ -313,6 +306,78 @@ footer {
   }
 }
 
+.about-us {
+  padding: 80px 0;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .heading-title {
+      text-align: center;
+      margin-bottom: 40px;
+
+      .title-bg {
+        background-color: #f0f0f0;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column-reverse; /* Change to 'column-reverse' to place the logo on top */
+      align-items: center;
+
+      .about-image {
+        flex: 1;
+        max-width: 50%;
+
+        img {
+          max-width: 100%;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+      }
+
+      .about-text {
+        flex: 1;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        p {
+          font-size: 18px;
+          line-height: 1.6;
+          margin-bottom: 20px;
+        }
+
+        .logo-container {
+          text-align: center; /* Center the logo */
+          margin-bottom: 20px;
+
+          img {
+            max-width: 100%; /* Adjust the size of the logo */
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      .about-content {
+        flex-direction: row;
+
+        .about-image {
+          margin-bottom: 0;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 800px) {
   .banner {
     .container {
@@ -359,6 +424,7 @@ footer {
   .contact {
     .content {
       .left {
+        padding-right: 0px;
         text-align: center;
         margin-bottom: 50px;
         ul {
@@ -371,6 +437,47 @@ footer {
         }
       }
       flex-direction: column;
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hero {
+    padding: $sm 1;
+    height: 90vh !important;
+    &::before {
+      height: 200vh; /* Set the height to 200vh for mobile screens */
+    }
+
+    .hero-title {
+      font-size: $xl-4; /* Adjust the font size for the hero title on mobile screens */
+      line-height: 1.5;
+      font-weight: 600;
+      margin-top: 0.5px; /* Add margin to create spacing between the hero title and sub-heading */
+      margin-bottom: $sm; /* Add margin to create spacing between the hero title and content below it */
+      background: linear-gradient(250deg, rgb(255, 85, 219) 24%, rgb(52, 108, 255) 100%);
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -moz-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .sub-heading {
+      flex-direction: column; /* List items vertically */
+      margin-top: 20%; /* Add margin to create spacing between the hero title and sub-heading */
+      display: flex;
+      
+      .titleSm {
+        margin: 10px 0; /* Add margin to create spacing between the items */
+        font-size: $sm; /* Adjust the font size for sub-heading items */
+        
+      }
+      span {
+        font-size: $xll;
+        line-height: 0;
+        color: $green;
+        display: none; /* Hide the green span on mobile screens */
+      }
     }
   }
 }
