@@ -181,18 +181,3 @@
 
 
 
-@media screen and (max-width: 800px) {
-  /* Additional styles for smaller screens (min-width: 400px to max-width: 700px) */
-  .slick-arrow .next {
-    top: 0;
-    right: 0;
-  }
-  .slick-arrow .prev {
-    top: 0;
-    left: 85%;
-  }
-  .heading-title {
-    max-width: 100%;
-    padding: 0px 0;
-  }
-}
