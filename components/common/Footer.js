@@ -60,7 +60,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://www.instagram.com/kvartum_drone/">
+                  <Link href="https://www.instagram.com/kvartum_media/">
                     <AiFillInstagram size={25} />
                   </Link>
                 </li>
